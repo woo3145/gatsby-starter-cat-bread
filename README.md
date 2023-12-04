@@ -45,8 +45,8 @@ Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
 
 ### todos
 
-- [ ] 태그 정리
-- [ ] zustand 상태관리
+- [x] 태그 정리
+- [x] zustand 상태관리
 - [ ] article page - author 컴포넌트
 - [ ] article page - 댓글 구현
 - [ ] articles page - 포스트 필터링

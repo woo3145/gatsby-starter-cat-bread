@@ -5,6 +5,8 @@ import { useDarkMode } from '@/hooks/useDarkMode';
 import { Button } from '../ui/button';
 import { useAppStore } from '@/store/appStore';
 import { useCategories } from '@/hooks/useCategories';
+import { useSiteMetadata } from '@/hooks/useSiteMetadata';
+import { useSiteConfiguration } from '@/hooks/useSiteConfiguration';
 
 export const MainLayout = ({ children }: { children: ReactNode }) => {
   const { isDarkMode, toggle } = useDarkMode();
@@ -12,13 +14,13 @@ export const MainLayout = ({ children }: { children: ReactNode }) => {
     useAppStore();
 
   const categories = useCategories();
-  // const siteMetadata = useSiteMetadata();
-  // const siteConfiguration = useSiteConfiguration();
+  const siteMetadata = useSiteMetadata();
+  const siteConfiguration = useSiteConfiguration();
 
   useEffect(() => {
     setCategories(categories);
-    // setSiteConfiguration(siteConfiguration);
-    // setSiteMetadata(siteMetadata);
+    setSiteConfiguration(siteConfiguration);
+    setSiteMetadata(siteMetadata);
   }, []);
 
   return (
