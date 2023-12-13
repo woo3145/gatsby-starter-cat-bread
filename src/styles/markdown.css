@@ -109,6 +109,7 @@
 }
 
 .blog_markdown .table-of-contents {
+  display: none;
   position: fixed;
   top: 18rem;
   right: 2rem;
@@ -122,7 +123,7 @@ ol {
 }
 
 .blog_markdown .table-of-contents li {
-  line-height: normal; /* 32px */
+  line-height: normal;
 }
 .blog_markdown .table-of-contents p {
   line-height: 2rem; /* 32px */
@@ -133,4 +134,11 @@ ol {
   font-size: 1.25rem; /* 20px */
   line-height: 2.375rem; /* 38px */
   font-weight: 400;
+  color: hsl(var(--foreground));
+}
+
+@media screen and (min-width: 1440px) {
+  .blog_markdown .table-of-contents {
+    display: block;
+  }
 }
