@@ -16,6 +16,11 @@ keywords:
   - 'Markdown'
 ---
 
+```toc
+from-heading: 2
+to-heading: 6
+```
+
 ## Code block test
 
 ```css
