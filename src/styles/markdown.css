@@ -136,6 +136,9 @@ ol {
   font-weight: 400;
   color: hsl(var(--foreground));
 }
+.blog_markdown .table-of-contents a.active {
+  color: hsl(var(--primary));
+}
 
 @media screen and (min-width: 1440px) {
   .blog_markdown .table-of-contents {
